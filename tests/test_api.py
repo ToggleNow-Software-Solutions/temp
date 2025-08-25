@@ -1,4 +1,5 @@
 from fastapi.testclient import TestClient
+
 from calculator_ai.main import app
 
 client = TestClient(app)

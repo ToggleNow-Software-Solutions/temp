@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+
 from .logic import add, subtract
 
 app = FastAPI(title="Calculator AI", version="0.1.0")
