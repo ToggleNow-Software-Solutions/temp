@@ -1,3 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculator-ai-training"
+version = "0.1.0"
+description = "Tiny FastAPI calculator for PR training."
+requires-python = ">=3.11"
+authors = [{ name = "Sriram" }]
+
+[tool.setuptools.packages.find]
+include = ["calculator_ai*"]
+
 [tool.black]
 line-length = 100
 target-version = ["py311"]
@@ -8,8 +22,7 @@ line-length = 100
 exclude = [".git", ".venv", "venv", "__pycache__", "build", "dist"]
 
 [tool.ruff.lint]
-# Linter rules live here (new style)
-select = ["E", "F", "I"]  # pycodestyle, pyflakes, import sort
+select = ["E", "F", "I"]
 
 [tool.mypy]
 python_version = "3.11"
