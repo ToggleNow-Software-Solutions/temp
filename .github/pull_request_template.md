@@ -2,7 +2,7 @@
 <!-- What does this PR do? -->
 
 ## Changes
-- 
+-
 
 ## Checklist
 - [ ] I ran `make lint` locally
